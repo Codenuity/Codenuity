@@ -26,7 +26,7 @@ export default function Home() {
         {/* <ClientSection className="" /> */}
       </div>
       <CaseStudySection />
-      <TestimonialSection />
+      {/* <TestimonialSection /> */}
       <div className="2xl:px-52 xl:px-40 px-10 md:px-20 w-full">
         <Section2 />
         <DesignDeliver />

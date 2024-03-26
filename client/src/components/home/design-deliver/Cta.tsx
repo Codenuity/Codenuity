@@ -32,7 +32,7 @@ const Cta = () => {
           Strategic Innovation
         </h1>
         <h2 className="lg:text-4xl md:text-2xl text-xl tracking-wide  bg-gradient-to-r from-neutral-50 to-neutral-800 bg-clip-text text-transparent">
-          Sets Up Apart
+          Sets Us Apart
         </h2>
       </div>
       <div className="md:w-1/3 w-full mt-5 md:mt-0">

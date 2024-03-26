@@ -1,0 +1,1380 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "forceNER": true,
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "executeActionsBeforeAnswers": false,
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager"
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "trainByDomain": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "useStemDict": true
+        },
+        "stemDict": {
+          "for,goodby,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,okay,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye,for,now": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "go,i,must": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "goodby": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "bye": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later,see,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "see,soon,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "care,take": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "farewel": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "long,so": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "next,time,until": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "again,meet,until,we": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "catch,later,you": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "later": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "peac": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "out,peac": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "toodl": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "toodle-oo": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "toodle-pip": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "toodle-loo": {
+            "intent": "greetings.bye",
+            "domain": "default"
+          },
+          "hello": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "howdi": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "hey": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "greet": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "day,good": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "good,morn": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "afternoon,good": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "even,good": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "good,night": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "good,see,to,you": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "nice,see,to,you": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "meet,nice,to,you": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "meet,pleas,to,you": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "are,how,you": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "go,how,is,it": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "everyth,how,is": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "are,how,thing": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "are,do,how,you": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "how,is,life": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "day,how,is,your": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "day,go,how,is,your": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "been,day,how,is,your": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "been,day,go,how,is,your": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "been,day,far,how,is,so,your": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          },
+          "been,day,far,how,is,so,today,your": {
+            "intent": "greetings.hello",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "greetings.bye": "default",
+          "greetings.hello": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "goodbye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye bye take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "okay see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye for now",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "i must go",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "goodbye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "bye",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "see you soon",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "take care",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "farewell",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "so long",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "until next time",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "until we meet again",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "catch you later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "later",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "laters",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "peace",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "peace out",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "toodles",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "toodle-oo",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "toodle-pip",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "toodle-loo",
+            "intent": "greetings.bye"
+          },
+          {
+            "domain": "default",
+            "utterance": "hello",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hi",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "howdy",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "hey",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "greetings",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good day",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good morning",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good afternoon",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good evening",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good night",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "good to see you",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "nice to see you",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "nice to meet you",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "pleased to meet you",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is it going",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is everything",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are things",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how are you doing",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is life",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is your day",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is your day going",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is your day been",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is your day been going",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is your day been so far",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is your day been so far",
+            "intent": "greetings.hello"
+          },
+          {
+            "domain": "default",
+            "utterance": "how is your day been so far today",
+            "intent": "greetings.hello"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "goodby": 1,
+              "for": 1,
+              "now": 1,
+              "bye": 1,
+              "take": 1,
+              "care": 1,
+              "okay": 1,
+              "see": 1,
+              "you": 1,
+              "later": 1,
+              "i": 1,
+              "must": 1,
+              "go": 1,
+              "soon": 1,
+              "farewel": 1,
+              "so": 1,
+              "long": 1,
+              "until": 1,
+              "next": 1,
+              "time": 1,
+              "we": 1,
+              "meet": 1,
+              "again": 1,
+              "catch": 1,
+              "peac": 1,
+              "out": 1,
+              "toodl": 1,
+              "toodle-oo": 1,
+              "toodle-pip": 1,
+              "toodle-loo": 1,
+              "hello": 1,
+              "hi": 1,
+              "howdi": 1,
+              "hey": 1,
+              "greet": 1,
+              "good": 1,
+              "day": 1,
+              "morn": 1,
+              "afternoon": 1,
+              "even": 1,
+              "night": 1,
+              "to": 1,
+              "nice": 1,
+              "pleas": 1,
+              "how": 1,
+              "are": 1,
+              "is": 1,
+              "it": 1,
+              "everyth": 1,
+              "thing": 1,
+              "do": 1,
+              "life": 1,
+              "your": 1,
+              "been": 1,
+              "far": 1,
+              "today": 1
+            },
+            "intents": {
+              "greetings.bye": 1,
+              "greetings.hello": 1
+            },
+            "intentFeatures": {
+              "greetings.bye": {
+                "goodby": 1,
+                "for": 1,
+                "now": 1,
+                "bye": 1,
+                "take": 1,
+                "care": 1,
+                "okay": 1,
+                "see": 1,
+                "you": 1,
+                "later": 1,
+                "i": 1,
+                "must": 1,
+                "go": 1,
+                "soon": 1,
+                "farewel": 1,
+                "so": 1,
+                "long": 1,
+                "until": 1,
+                "next": 1,
+                "time": 1,
+                "we": 1,
+                "meet": 1,
+                "again": 1,
+                "catch": 1,
+                "peac": 1,
+                "out": 1,
+                "toodl": 1,
+                "toodle-oo": 1,
+                "toodle-pip": 1,
+                "toodle-loo": 1
+              },
+              "greetings.hello": {
+                "hello": 1,
+                "hi": 1,
+                "howdi": 1,
+                "hey": 1,
+                "greet": 1,
+                "good": 1,
+                "day": 1,
+                "morn": 1,
+                "afternoon": 1,
+                "even": 1,
+                "night": 1,
+                "to": 1,
+                "see": 1,
+                "you": 1,
+                "nice": 1,
+                "meet": 1,
+                "pleas": 1,
+                "how": 1,
+                "are": 1,
+                "is": 1,
+                "it": 1,
+                "go": 1,
+                "everyth": 1,
+                "thing": 1,
+                "do": 1,
+                "life": 1,
+                "your": 1,
+                "been": 1,
+                "so": 1,
+                "far": 1,
+                "today": 1
+              }
+            },
+            "featuresToIntent": {
+              "goodby": [
+                "greetings.bye"
+              ],
+              "for": [
+                "greetings.bye"
+              ],
+              "now": [
+                "greetings.bye"
+              ],
+              "bye": [
+                "greetings.bye"
+              ],
+              "take": [
+                "greetings.bye"
+              ],
+              "care": [
+                "greetings.bye"
+              ],
+              "okay": [
+                "greetings.bye"
+              ],
+              "see": [
+                "greetings.bye",
+                "greetings.hello"
+              ],
+              "you": [
+                "greetings.bye",
+                "greetings.hello"
+              ],
+              "later": [
+                "greetings.bye"
+              ],
+              "i": [
+                "greetings.bye"
+              ],
+              "must": [
+                "greetings.bye"
+              ],
+              "go": [
+                "greetings.bye",
+                "greetings.hello"
+              ],
+              "soon": [
+                "greetings.bye"
+              ],
+              "farewel": [
+                "greetings.bye"
+              ],
+              "so": [
+                "greetings.bye",
+                "greetings.hello"
+              ],
+              "long": [
+                "greetings.bye"
+              ],
+              "until": [
+                "greetings.bye"
+              ],
+              "next": [
+                "greetings.bye"
+              ],
+              "time": [
+                "greetings.bye"
+              ],
+              "we": [
+                "greetings.bye"
+              ],
+              "meet": [
+                "greetings.bye",
+                "greetings.hello"
+              ],
+              "again": [
+                "greetings.bye"
+              ],
+              "catch": [
+                "greetings.bye"
+              ],
+              "peac": [
+                "greetings.bye"
+              ],
+              "out": [
+                "greetings.bye"
+              ],
+              "toodl": [
+                "greetings.bye"
+              ],
+              "toodle-oo": [
+                "greetings.bye"
+              ],
+              "toodle-pip": [
+                "greetings.bye"
+              ],
+              "toodle-loo": [
+                "greetings.bye"
+              ],
+              "hello": [
+                "greetings.hello"
+              ],
+              "hi": [
+                "greetings.hello"
+              ],
+              "howdi": [
+                "greetings.hello"
+              ],
+              "hey": [
+                "greetings.hello"
+              ],
+              "greet": [
+                "greetings.hello"
+              ],
+              "good": [
+                "greetings.hello"
+              ],
+              "day": [
+                "greetings.hello"
+              ],
+              "morn": [
+                "greetings.hello"
+              ],
+              "afternoon": [
+                "greetings.hello"
+              ],
+              "even": [
+                "greetings.hello"
+              ],
+              "night": [
+                "greetings.hello"
+              ],
+              "to": [
+                "greetings.hello"
+              ],
+              "nice": [
+                "greetings.hello"
+              ],
+              "pleas": [
+                "greetings.hello"
+              ],
+              "how": [
+                "greetings.hello"
+              ],
+              "are": [
+                "greetings.hello"
+              ],
+              "is": [
+                "greetings.hello"
+              ],
+              "it": [
+                "greetings.hello"
+              ],
+              "everyth": [
+                "greetings.hello"
+              ],
+              "thing": [
+                "greetings.hello"
+              ],
+              "do": [
+                "greetings.hello"
+              ],
+              "life": [
+                "greetings.hello"
+              ],
+              "your": [
+                "greetings.hello"
+              ],
+              "been": [
+                "greetings.hello"
+              ],
+              "far": [
+                "greetings.hello"
+              ],
+              "today": [
+                "greetings.hello"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "goodby",
+                "for",
+                "now",
+                "bye",
+                "take",
+                "care",
+                "okay",
+                "see",
+                "you",
+                "later",
+                "i",
+                "must",
+                "go",
+                "soon",
+                "farewel",
+                "so",
+                "long",
+                "until",
+                "next",
+                "time",
+                "we",
+                "meet",
+                "again",
+                "catch",
+                "peac",
+                "out",
+                "toodl",
+                "toodle-oo",
+                "toodle-pip",
+                "toodle-loo",
+                "hello",
+                "hi",
+                "howdi",
+                "hey",
+                "greet",
+                "good",
+                "day",
+                "morn",
+                "afternoon",
+                "even",
+                "night",
+                "to",
+                "nice",
+                "pleas",
+                "how",
+                "are",
+                "is",
+                "it",
+                "everyth",
+                "thing",
+                "do",
+                "life",
+                "your",
+                "been",
+                "far",
+                "today"
+              ],
+              "intents": [
+                "greetings.bye",
+                "greetings.hello"
+              ],
+              "perceptrons": [
+                [
+                  2.0158636569976807,
+                  0.1721019148826599,
+                  0.1721019148826599,
+                  1.6211826801300049,
+                  0.6788533329963684,
+                  0.6788533329963684,
+                  -0.8298545479774475,
+                  2.377768039703369,
+                  -1.1526893377304077,
+                  1.7331206798553467,
+                  1.2271350622177124,
+                  1.2271350622177124,
+                  -0.2693568170070648,
+                  0.9218959212303162,
+                  2.202378273010254,
+                  0.9217248558998108,
+                  1.2363985776901245,
+                  1.4012459516525269,
+                  0.3693443834781647,
+                  0.3693443834781647,
+                  1.0332330465316772,
+                  -1.3385225534439087,
+                  1.0332330465316772,
+                  1.5337224006652832,
+                  2.185943365097046,
+                  -0.09244047105312347,
+                  2.1847457885742188,
+                  2.1877262592315674,
+                  2.190711259841919,
+                  2.193701982498169,
+                  -12.089016914367676,
+                  -12.086014747619629,
+                  -12.083008766174316,
+                  -12.079996109008789,
+                  -12.07697868347168,
+                  -10.238561630249023,
+                  -1.9134330749511719,
+                  -1.9119728803634644,
+                  -1.9105125665664673,
+                  -1.909048080444336,
+                  -1.9075777530670166,
+                  -8.114309310913086,
+                  -5.267698287963867,
+                  -1.5443987846374512,
+                  -7.453272342681885,
+                  -3.689131736755371,
+                  -3.762965440750122,
+                  -1.2743778228759766,
+                  -0.9337827563285828,
+                  -0.9991480708122253,
+                  -0.4791417419910431,
+                  -0.929625928401947,
+                  -0.6189534068107605,
+                  -0.3803766071796417,
+                  -0.3145057260990143,
+                  -0.029678981751203537,
+                  12.156695140771152
+                ],
+                [
+                  -4.870851039886475,
+                  -1.7645930051803589,
+                  -1.7645930051803589,
+                  -4.870843410491943,
+                  -2.443988084793091,
+                  -2.443988084793091,
+                  -1.0908690690994263,
+                  -3.683246374130249,
+                  -1.18213951587677,
+                  -4.870727062225342,
+                  -2.4348692893981934,
+                  -2.4348692893981934,
+                  -0.001104095601476729,
+                  -1.6892486810684204,
+                  -4.870616912841797,
+                  -1.6237611770629883,
+                  -3.2468903064727783,
+                  -2.604792594909668,
+                  -1.1335153579711914,
+                  -1.1335153579711914,
+                  -1.4396816492080688,
+                  -3.6576058864593506,
+                  -1.4396816492080688,
+                  -0.7446481585502625,
+                  -4.870590686798096,
+                  -1.2713693380355835,
+                  -4.870581150054932,
+                  -4.870572090148926,
+                  -4.8705620765686035,
+                  -4.8705525398254395,
+                  9.41517162322998,
+                  9.415182113647461,
+                  9.415190696716309,
+                  9.415202140808105,
+                  9.41521167755127,
+                  6.972035884857178,
+                  2.4394521713256836,
+                  2.441547393798828,
+                  2.441465377807617,
+                  2.441347122192383,
+                  2.4412097930908203,
+                  7.31797981262207,
+                  6.947980880737305,
+                  6.930710792541504,
+                  6.298573970794678,
+                  4.293511867523193,
+                  2.0051045417785645,
+                  1.111697793006897,
+                  1.110214114189148,
+                  -1.1754887104034424,
+                  0.005489578936249018,
+                  1.1103962659835815,
+                  -1.3272594213485718,
+                  -0.0006078158039599657,
+                  1.6231403350830078,
+                  0.00004498162161326036,
+                  4.871047266948577
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "goodbye for now"
+      ],
+      [
+        "en",
+        "bye bye take care"
+      ],
+      [
+        "en",
+        "okay see you later"
+      ],
+      [
+        "en",
+        "bye for now"
+      ],
+      [
+        "en",
+        "i must go"
+      ],
+      [
+        "en",
+        "goodbye"
+      ],
+      [
+        "en",
+        "bye"
+      ],
+      [
+        "en",
+        "see you"
+      ],
+      [
+        "en",
+        "see you later"
+      ],
+      [
+        "en",
+        "see you soon"
+      ],
+      [
+        "en",
+        "take care"
+      ],
+      [
+        "en",
+        "farewell"
+      ],
+      [
+        "en",
+        "so long"
+      ],
+      [
+        "en",
+        "until next time"
+      ],
+      [
+        "en",
+        "until we meet again"
+      ],
+      [
+        "en",
+        "catch you later"
+      ],
+      [
+        "en",
+        "later"
+      ],
+      [
+        "en",
+        "laters"
+      ],
+      [
+        "en",
+        "peace"
+      ],
+      [
+        "en",
+        "peace out"
+      ],
+      [
+        "en",
+        "toodles"
+      ],
+      [
+        "en",
+        "toodle-oo"
+      ],
+      [
+        "en",
+        "toodle-pip"
+      ],
+      [
+        "en",
+        "toodle-loo"
+      ],
+      [
+        "en",
+        "hello"
+      ],
+      [
+        "en",
+        "hi"
+      ],
+      [
+        "en",
+        "howdy"
+      ],
+      [
+        "en",
+        "hey"
+      ],
+      [
+        "en",
+        "greetings"
+      ],
+      [
+        "en",
+        "good day"
+      ],
+      [
+        "en",
+        "good morning"
+      ],
+      [
+        "en",
+        "good afternoon"
+      ],
+      [
+        "en",
+        "good evening"
+      ],
+      [
+        "en",
+        "good night"
+      ],
+      [
+        "en",
+        "good to see you"
+      ],
+      [
+        "en",
+        "nice to see you"
+      ],
+      [
+        "en",
+        "nice to meet you"
+      ],
+      [
+        "en",
+        "pleased to meet you"
+      ],
+      [
+        "en",
+        "how are you"
+      ],
+      [
+        "en",
+        "how is it going"
+      ],
+      [
+        "en",
+        "how is everything"
+      ],
+      [
+        "en",
+        "how are things"
+      ],
+      [
+        "en",
+        "how are you doing"
+      ],
+      [
+        "en",
+        "how is life"
+      ],
+      [
+        "en",
+        "how is your day"
+      ],
+      [
+        "en",
+        "how is your day going"
+      ],
+      [
+        "en",
+        "how is your day been"
+      ],
+      [
+        "en",
+        "how is your day been going"
+      ],
+      [
+        "en",
+        "how is your day been so far"
+      ],
+      [
+        "en",
+        "how is your day been so far"
+      ],
+      [
+        "en",
+        "how is your day been so far today"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "greetings.bye": [
+          {
+            "answer": "Till next time"
+          },
+          {
+            "answer": "see you soon!"
+          },
+          {
+            "answer": "goodbye!"
+          },
+          {
+            "answer": "bye!"
+          },
+          {
+            "answer": "bye bye!"
+          },
+          {
+            "answer": "see you later!"
+          },
+          {
+            "answer": "take care!"
+          },
+          {
+            "answer": "farewell!"
+          },
+          {
+            "answer": "so long!"
+          },
+          {
+            "answer": "until next time!"
+          },
+          {
+            "answer": "until we meet again!"
+          },
+          {
+            "answer": "catch you later!"
+          },
+          {
+            "answer": "later!"
+          },
+          {
+            "answer": "laters!"
+          },
+          {
+            "answer": "peace!"
+          },
+          {
+            "answer": "peace out!"
+          },
+          {
+            "answer": "toodles!"
+          },
+          {
+            "answer": "toodle-oo!"
+          },
+          {
+            "answer": "toodle-pip!"
+          },
+          {
+            "answer": "toodle-loo!"
+          }
+        ],
+        "greetings.hello": [
+          {
+            "answer": "Hey there!"
+          },
+          {
+            "answer": "Greetings!"
+          },
+          {
+            "answer": "Hello!"
+          },
+          {
+            "answer": "Hi!"
+          },
+          {
+            "answer": "Hai there!"
+          },
+          {
+            "answer": "Hai"
+          },
+          {
+            "answer": "Howdy!"
+          },
+          {
+            "answer": "Good day!"
+          },
+          {
+            "answer": "Good to see you!"
+          },
+          {
+            "answer": "Nice to see you!"
+          },
+          {
+            "answer": "Nice to meet you!"
+          },
+          {
+            "answer": "Pleased to meet you!"
+          },
+          {
+            "answer": "How are you!"
+          },
+          {
+            "answer": "How is it going!"
+          },
+          {
+            "answer": "How is everything!"
+          },
+          {
+            "answer": "How are things!"
+          },
+          {
+            "answer": "How are you doing!"
+          },
+          {
+            "answer": "How is life!"
+          },
+          {
+            "answer": "How is your day!"
+          },
+          {
+            "answer": "How is your day going!"
+          },
+          {
+            "answer": "How is your day been!"
+          },
+          {
+            "answer": "How is your day been going!"
+          },
+          {
+            "answer": "How is your day been so far!"
+          },
+          {
+            "answer": "How is your day been so far today!"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

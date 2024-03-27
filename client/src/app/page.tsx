@@ -10,6 +10,7 @@ import { Section2 } from "@/components/home/section2/Section2";
 import { DesignDeliver } from "@/components/home/design-deliver/DesignDeliver";
 import Footer from "@/components/footer/Footer";
 import MobileNavbar from "@/components/navbar/MobileNavbar";
+import ParticlesBackground from "@/components/ui/ParticlesBackground";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
         <Section2 />
         <DesignDeliver />
       </div>
+      <ParticlesBackground />
       <Footer />
     </main>
   );

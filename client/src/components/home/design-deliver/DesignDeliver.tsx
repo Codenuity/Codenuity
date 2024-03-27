@@ -12,7 +12,7 @@ export const DesignDeliver = () => {
 
 
   return (
-    <div className="flex flex-col pt-48 lg:py-20 gap-y-0 lg:gap-0">
+    <div className="flex flex-col lg:py-20 gap-y-0 lg:gap-0">
       <div className="w-full flex flex-col lg:flex-row gap-10">
         <IconSection />
         <ContentSection />

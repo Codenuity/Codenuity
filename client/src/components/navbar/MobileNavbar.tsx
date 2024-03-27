@@ -3,7 +3,7 @@ import React from 'react'
 
 const MobileNavbar = () => {
   return (
-    <div className='lg:hidden text-white w-full fixed top-10 px-10 md:px-20' >
+    <div className='lg:hidden text-white w-full fixed top-10 px-10 md:px-20 z-50' >
         <Logo />
     </div>
   )

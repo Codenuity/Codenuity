@@ -9,7 +9,6 @@ import { TestimonialSection } from "@/components/home/testimonials/Testimonails"
 import { Section2 } from "@/components/home/section2/Section2";
 import { DesignDeliver } from "@/components/home/design-deliver/DesignDeliver";
 import Footer from "@/components/footer/Footer";
-import ParticlesBackground from "@/components/ui/ParticlesBackground";
 import MobileNavbar from "@/components/navbar/MobileNavbar";
 
 export default function Home() {
@@ -17,7 +16,7 @@ export default function Home() {
     <main className="bg-black text-neutral-50 h-fit overflow-x-hidden ">
       <Navbar className="" />
       <MobileNavbar />
-      <Background>
+      <Background ClassName="">
         <Hero />
       </Background>
       <div className="flex flex-col justify-center px-10 md:px-20 items-center 2xl:px-52 xl:px-40">
@@ -31,7 +30,6 @@ export default function Home() {
         <Section2 />
         <DesignDeliver />
       </div>
-      <ParticlesBackground />
       <Footer />
     </main>
   );

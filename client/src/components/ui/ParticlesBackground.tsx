@@ -14,11 +14,7 @@ const ParticlesBackground = () => {
       setInit(true);
     });
   }, []);
-
-  const particlesLoaded = (container:any) => {
-    console.log(container);
-  };
-
+  
 
   return (
     <>

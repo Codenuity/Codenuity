@@ -21,7 +21,7 @@ export const SectionButton = ({
     return (
       <button
         onClick={handleClick}
-        className={`px-5 py-3 border border-neutral-800 text-neutral-50 rounded-lg ${buttonClass}`}
+        className={`px-5 py-3 border border-neutral-800 text-neutral-50 md:w-fit w-full rounded-lg ${buttonClass}`}
       >
         {title}
       </button>

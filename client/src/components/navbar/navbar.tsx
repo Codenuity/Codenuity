@@ -10,6 +10,8 @@ import {
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
+import Link from "next/link";
+
 type NavbarProps = {
   className: string;
 };
@@ -20,14 +22,13 @@ const Navbar = ({ className }: NavbarProps): JSX.Element => {
   const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;    
-        if (direction < 0) {
-          setVisible(true);
-        } else {
-          setVisible(false);
-        }
+      let direction = current! - scrollYProgress.getPrevious()!;
+      if (direction < 0) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
     }
   });
 
@@ -54,7 +55,10 @@ const Navbar = ({ className }: NavbarProps): JSX.Element => {
           )}
         >
           <div className="text-white text-2xl font-bold">
-            <LogoFull />
+            <Link href='/' className="size-fit cursor-pointer" >
+              <LogoFull />
+            </Link>
+           
           </div>
           <div className="flex items-center space-x-4 2xl:w-7/12 lg:w-9/12 justify-between">
             {navItems.map((item) => (

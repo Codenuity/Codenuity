@@ -14,13 +14,16 @@ const ParticlesBackground = () => {
       setInit(true);
     });
   }, []);
-  
+
 
   return (
     <>
       {init && (
         <Particles
           id="tsparticles"
+          style={{
+            backgroundColor:"black",
+          }}
           options={{
             particles: {
               number: {

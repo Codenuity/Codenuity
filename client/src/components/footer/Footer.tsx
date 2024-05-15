@@ -7,7 +7,7 @@ import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-neutral-50 text-neutral-950 mt-40 py-20 2xl:px-52 xl:px-40 px-10 md:px-20 flex flex-col lg:justify-between gap-0">
+    <div className="w-full bg-neutral-50 text-neutral-950 mt-24 lg:mt-40 py-20 2xl:px-52 xl:px-40 px-10 md:px-20 flex flex-col lg:justify-between gap-0">
       <div className="justify-between hidden lg:flex">
         <Address />
         <RightSection />

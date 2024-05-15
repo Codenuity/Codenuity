@@ -10,7 +10,12 @@ import { Section2 } from "@/components/home/section2/Section2";
 import { DesignDeliver } from "@/components/home/design-deliver/DesignDeliver";
 import Footer from "@/components/footer/Footer";
 import MobileNavbar from "@/components/navbar/MobileNavbar";
-import ParticlesBackground from "@/components/ui/ParticlesBackground";
+
+const Particles = dynamic(() => import("@/components/ui/ParticlesBackground"), {
+  ssr: false,
+});
+
+import dynamic from "next/dynamic";
 
 export default function Home() {
   return (
@@ -31,7 +36,7 @@ export default function Home() {
         <Section2 />
         <DesignDeliver />
       </div>
-      <ParticlesBackground />
+      <Particles />
       <Footer />
     </main>
   );

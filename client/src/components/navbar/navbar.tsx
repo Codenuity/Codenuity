@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 
 type NavbarProps = {
-  className: string;
+  className?: string;
 };
 
 const Navbar = ({ className }: NavbarProps): JSX.Element => {

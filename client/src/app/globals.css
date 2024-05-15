@@ -3,8 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 @layer utilities {
@@ -24,8 +25,8 @@ body{
 
     .custom-scrollbar {
         --sb-track-color: #232E33;
-            --sb-thumb-color: #9b4aff;
-            --sb-size: 6px;
+        --sb-thumb-color: #9b4aff;
+        --sb-size: 6px;
     }
 
     .custom-scrollbar::-webkit-scrollbar {
@@ -51,10 +52,10 @@ body{
     }
 
     .line-animation {
-            background: linear-gradient(-45deg, #392F82, #FB4DFF, #30CDFF, #FF3030);
-                background-size: 400% 400%;
-                animation: gradient 15s ease infinite;
-                height: 1px;
+        background: linear-gradient(-45deg, #392F82, #FB4DFF, #30CDFF, #FF3030);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 1px;
     }
 
     .button-animation {
@@ -64,42 +65,135 @@ body{
 
     }
 
+
     @keyframes gradient {
-        
-    0% {
+
+        0% {
             background-position: 0% 50%;
-    }
-    
-    50% {
+        }
+
+        50% {
             background-position: 100% 50%;
-    }
-    
+        }
+
         100% {
             background-position: 0% 50%;
         }
     }
 
-        .link-with-underline {
-            position: relative;
-            text-decoration: none;
-        }
-    
-        .link-with-underline::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            /* Adjust thickness as needed */
-            background-color: currentColor;
-            transition: width 0.3s ease-in-out;
-            /* Adjust duration and timing function as needed */
-        }
-    
-        .link-with-underline:hover::before {
-            width: 100%;
-        }
+    .link-with-underline {
+        position: relative;
+        text-decoration: none;
+    }
+
+    .link-with-underline::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        /* Adjust thickness as needed */
+        background-color: currentColor;
+        transition: width 0.3s ease-in-out;
+        /* Adjust duration and timing function as needed */
+    }
+
+    .link-with-underline:hover::before {
+        width: 100%;
+    }
+
+
+    .text-animation {
+        background: linear-gradient(-45deg, #392F82, #FB4DFF, #30CDFF, #FF3030);
+        background-size: 400% 400%;
+        background-clip: text;
+        animation: gradient 15s ease infinite;
+        display: inline-block;
+        /* Makes the text container shrink to fit the text */
+        white-space: nowrap;
+        -webkit-text-fill-color: transparent;
+        /* Prevents the text from wrapping */
+    }
+
+    /* Hide the default checkbox */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .container {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: relative;
+        box-shadow: #A604F2;
+        background-color: #262626;
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        margin-top: -1px;
+        transition: all 0.2s ease 0s;
+        cursor: pointer;
+        transform-origin: 0px 10px;
+        border-radius: 4px;
+        margin: -1px 10px 0px 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .container input:checked~.checkmark {
+        box-shadow: #A604F2;
+        background-color: #763AF5;
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        margin-top: -1px;
+        transition: all 0.2s ease 0s;
+        cursor: pointer;
+        transform-origin: 0px 10px;
+        border-radius: 4px;
+        margin: -1px 10px 0px 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .container input:checked~.checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 0.45em;
+        top: 0.25em;
+        width: 0.25em;
+        height: 0.5em;
+        border: solid white;
+        border-width: 0 0.15em 0.15em 0;
+        transform: rotate(45deg);
+        transition: all 500ms ease-in-out;
+    }
+
+    .mix-blend-diff {
+        mix-blend-mode: difference;
+    }
+
 
 }
-

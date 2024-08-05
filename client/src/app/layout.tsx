@@ -9,9 +9,6 @@ export const metadata: Metadata = {
   title: "Codenuity",
   description:
     "Top Mobile App Development Company. Experts in iOS/Android Apps, Web Design, UX/UI, AI, Machine Learning, Blockchain, Cybersecurity. Trusted Technology Solutions.",
-  twitter:{
-    card:"summary_large_image",
-  },
 }; 
 
 export default function RootLayout({

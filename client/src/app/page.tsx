@@ -36,7 +36,7 @@ export default function Home() {
         <Section2 />
         <DesignDeliver />
       </div>
-      {/* <Particles /> */}
+      <Particles />
       <Footer />
     </main>
   );

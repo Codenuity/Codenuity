@@ -19,7 +19,7 @@ export const Section = (): JSX.Element => {
       {view && (
         <TextGenerateEffect
           words={content?.section}
-          className="z-10 flex items-center justify-center text-3xl md:text-5xl xl:text-6xl"
+          className="z-10 flex items-center justify-center text-3xl md:text-5xl"
         />
       )}
     </section>

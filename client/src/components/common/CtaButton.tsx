@@ -5,8 +5,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 
 type CtaButtonProp = {
-    className:string
-}
+  className: string;
+};
 
 const CtaButton = ({ className }: CtaButtonProp) => {
   const [hover, setHover] = useState(false);
@@ -34,8 +34,8 @@ const CtaButton = ({ className }: CtaButtonProp) => {
         onMouseLeave={handleMouseLeave}
         onMouseEnter={() => setHover(true)}
         onMouseMove={handleMouseMove}
-        href="/"
-        className="w-full border border-neutral-200 grid place-items-center h-20 md:min-h-full hover:scale-105 transition-all md:h-32 ease-in-out duration-500 text-2xl relative overflow-hidden"
+        href="/contact"
+        className="relative grid h-20 w-full place-items-center overflow-hidden border border-neutral-200 text-2xl transition-all duration-500 ease-in-out hover:scale-105 md:h-32 md:min-h-full"
       >
         <motion.div
           initial={{ scale: 0 }}
@@ -51,7 +51,7 @@ const CtaButton = ({ className }: CtaButtonProp) => {
             stiffness: 100,
             damping: 10,
           }}
-          className="bg-neutral-50 absolute h-[100rem] w-[100rem] rounded-full z-10 "
+          className="absolute z-10 h-[100rem] w-[100rem] rounded-full bg-neutral-50"
         ></motion.div>
         <span
           className={`z-20`}

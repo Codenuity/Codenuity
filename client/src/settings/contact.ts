@@ -21,7 +21,7 @@ export const contact = {
       name: "name",
       title: "Name",
       type: "text",
-      placeholder: "Enter Your Frist & Last Name",
+      placeholder: "Enter Your First & Last Name",
     },
     {
       name: "company",

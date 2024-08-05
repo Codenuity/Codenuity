@@ -3,15 +3,15 @@ import ContactForm from "./ContactForm";
 
 const ContactSection = () => {
   return (
-    <div className="min-h-screen md:min-h-fit w-full h-fit flex flex-col lg:flex-row lg:justify-center lg:items-center mt-24">
-      <div className="md:w-1/2 w-full">
-        <h1 className="lg:text-7xl text-3xl font-light text-animation ">
+    <div className="mt-24 flex h-fit min-h-screen w-full flex-col md:min-h-fit lg:flex-row lg:items-center lg:justify-center">
+      <div className="w-full lg:w-1/2">
+        <h1 className="text-animation text-3xl font-light lg:text-6xl 2xl:text-7xl">
           Get in Touch <br className="sm:hidden lg:block" />
           with Innovation
         </h1>
       </div>
-      <div className="lg:w-1/2 w-full mt-10 lg:mt-0">
-        <ContactForm/>
+      <div className="mt-10 w-full lg:mt-0 lg:w-1/2">
+        <ContactForm />
       </div>
     </div>
   );

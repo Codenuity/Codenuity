@@ -17,7 +17,7 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
 
   const addCode = (dial_code: string, number: string) => {
     console.log(dial_code, number);
-    const cleanedNumber = number.replace(dial_code, "")
+    const cleanedNumber = number.replace(dial_code, "");
     console.log(cleanedNumber);
     return `${dial_code} ${cleanedNumber.trim()}`;
   };
@@ -31,10 +31,10 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
   return (
     <>
       {type === "checkbox" && (
-        <div className={cn("flex gap-2 items-center  bg-black", className)}>
+        <div className={cn("flex items-center gap-2 bg-black", className)}>
           <label
             htmlFor={name}
-            className="container flex items-center cursor-pointer text-sm"
+            className="container flex cursor-pointer items-center text-sm"
           >
             <input
               className=""
@@ -44,18 +44,18 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
               placeholder={placeholder}
             />
             <div className="checkmark"></div>
-            <span className="text-neutral-300">{title}</span>
+            <span className="text-nowrap text-neutral-300">{title}</span>
           </label>
         </div>
       )}
       {type === "text" || type === "email" ? (
-        <div className="flex flex-col gap-2  lg:w-[26rem] w-full">
+        <div className="flex w-full flex-col gap-2 lg:w-[26rem]">
           <label htmlFor={name}>{title}</label>
           <div
-            className={cn("bg-neutral-800 w-full rounded-lg p-1", className)}
+            className={cn("w-full rounded-lg bg-neutral-800 p-1", className)}
           >
             <input
-              className="bg-neutral-800 px-5 py-2 w-full rounded-md caret-neutral-50 text-neutral-200 focus:outline-none border border-neutral-800 focus:border-neutral-700"
+              className="w-full rounded-md border border-neutral-800 bg-neutral-800 px-5 py-2 text-neutral-200 caret-neutral-50 focus:border-neutral-700 focus:outline-none"
               type={type}
               id={name}
               name={name}
@@ -66,12 +66,12 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
       ) : null}
 
       {type === "number" && (
-        <div className="lg:w-[26rem] w-full">
-          <label className="text-neutral-50 text-base">{title}</label>
-          <div className="relative mt-2 lg:max-w-[26rem] max-w-full text-gray-500 bg-neutral-800 rounded-lg p-1">
-            <div className="absolute inset-y-0 left-3 my-auto h-6 flex items-center  border-r pr-2">
+        <div className="w-full lg:w-[26rem]">
+          <label className="text-base text-neutral-50">{title}</label>
+          <div className="relative mt-2 max-w-full rounded-lg bg-neutral-800 p-1 text-gray-500 lg:max-w-[26rem]">
+            <div className="absolute inset-y-0 left-3 my-auto flex h-6 items-center border-r pr-2">
               <select
-                className="text-base outline-none h-full bg-transparent"
+                className="h-full bg-transparent text-base outline-none"
                 onChange={(e) => setCode(e.target.value)}
                 defaultValue={code}
               >
@@ -91,7 +91,7 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
               onChange={(e) => {
                 handleNumberChange(e, code);
               }}
-              className="w-full pl-[4.5rem] pr-3 py-2 appearance-none bg-transparent outline-none  shadow-base rounded-md caret-neutral-50 text-neutral-200 focus:outline-none border border-neutral-800 focus:border-neutral-700"
+              className="shadow-base w-full appearance-none rounded-md border border-neutral-800 bg-transparent py-2 pl-[4.5rem] pr-3 text-neutral-200 caret-neutral-50 outline-none focus:border-neutral-700 focus:outline-none"
             />
           </div>
         </div>
@@ -108,7 +108,7 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
               minLength={5}
               name={name}
               placeholder={placeholder}
-              className="bg-neutral-800 px-5 py-2 w-full rounded-md caret-neutral-50 text-neutral-200 focus:outline-none border border-neutral-800 focus:border-neutral-700"
+              className="w-full rounded-md border border-neutral-800 bg-neutral-800 px-5 py-2 text-neutral-200 caret-neutral-50 focus:border-neutral-700 focus:outline-none"
               id={name}
             ></textarea>
           </div>

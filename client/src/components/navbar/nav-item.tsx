@@ -13,18 +13,17 @@ export const NavItem = ({
   isActive,
   setIsActive,
 }: NavItemProps): JSX.Element => {
-
-  const pathname = usePathname()
+  const pathname = usePathname();
 
   return (
     <button
       className={`bg-neutral-950 bg-opacity-20 ${
-        pathname === href ? " border border-neutral-700" : ""
-      } transition-all ease-in-out delay-1000 duration-1000 hover:bg-gradient-to-t hover:from-neutral-800 hover:via-neutral-950 hover:to-neutral-950  px-2 py-1 rounded-full`}
+        pathname === href ? "border border-neutral-700" : ""
+      } rounded-full py-1 transition-all delay-1000 duration-1000 ease-in-out hover:bg-gradient-to-t hover:from-neutral-800 hover:via-neutral-950 hover:to-neutral-950`}
     >
       <Link
         href={href}
-        className="bg-clip-text bg-gradient-to-b from-slate-500 px-5 py-2 to-slate-50  inline-block text-transparent"
+        className="inline-block bg-gradient-to-b from-slate-500 to-slate-50 bg-clip-text px-2 2xl:px-5 py-2 text-transparent"
       >
         {label}
       </Link>

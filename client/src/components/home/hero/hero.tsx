@@ -4,15 +4,18 @@ import { TextGenerateEffect } from "../../ui/text-generate";
 import Image from "next/image";
 import { content } from "@/settings/home";
 import { motion } from "framer-motion";
-import { LiaSpaceShuttleSolid } from "react-icons/lia";
+import { ArrowRight } from "lucide-react";
 
 export const Hero = (): JSX.Element => {
   return (
-    <div className="flex h-screen flex-col items-center text-neutral-50 font-light justify-center lg:justify-end xl:w-4/5 w-full">
-      <div className="flex flex-col xl:mt-20 gap-y-10 ">
-        <TextGenerateEffect words={content.hero} className="z-10 xl:text-5xl md:text-4xl text-2xl mt-10" />
+    <div className="flex h-screen w-full flex-col items-center justify-center font-light text-neutral-50 lg:justify-end xl:w-4/5">
+      <div className="flex flex-col gap-y-10 xl:mt-20">
+        <TextGenerateEffect
+          words={content.hero}
+          className="z-10 mt-10 text-2xl md:text-4xl xl:text-5xl"
+        />
         <motion.span
-          className="overflow-y-hidden  text-neutral-400 flex gap-3 xl:text-2xl md:text-xl text-lg items-center"
+          className="flex items-center gap-3 overflow-y-hidden text-lg text-neutral-400 md:text-xl xl:text-2xl"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -22,11 +25,11 @@ export const Hero = (): JSX.Element => {
         >
           <Link
             href="/case-studies"
-            className="flex font-light link-with-underline hover:text-neutral-50 w-fit items-center gap-3 z-10 "
+            className="link-with-underline z-10 flex w-fit items-center gap-3 font-light hover:text-neutral-50"
           >
             View our Case Studies
           </Link>
-          <LiaSpaceShuttleSolid />
+          <ArrowRight />
         </motion.span>
       </div>
       <div className="">

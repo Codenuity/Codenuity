@@ -1,12 +1,11 @@
-import React from "react";
 import Input from "./Input";
 import { contact } from "@/settings/contact";
 import CustomSelect from "../common/CustomSelect";
 
 const ContactForm = () => {
   return (
-    <form className="flex flex-wrap w-full lg:gap-20 gap-5">
-      <div className="flex lg:gap-24 gap-5 justify-between w-full flex-col md:flex-row">
+    <form className="flex w-full flex-wrap gap-5 lg:gap-20">
+      <div className="flex w-full flex-col justify-between gap-4 md:flex-row xl:gap-8 2xl:gap-20">
         <Input
           className=""
           key={contact.formElements[0].name}
@@ -24,7 +23,7 @@ const ContactForm = () => {
           type={contact.formElements[1].type}
         />
       </div>
-      <div className="flex flex-col md:flex-row  lg:gap-24 gap-5 justify-between w-full">
+      <div className="flex w-full flex-col justify-between gap-4 md:flex-row xl:gap-8 2xl:gap-20">
         <Input
           className=""
           key={contact.formElements[2].name}
@@ -42,9 +41,9 @@ const ContactForm = () => {
           type={contact.formElements[3].type}
         />
       </div>
-      <div className="flex  flex-col w-full gap-2">
+      <div className="flex w-full flex-col gap-2">
         <label htmlFor="subject">Subject</label>
-        <div className="lg:gap-24 gap-5 flex-col md:flex-row md:justify-between justify-start w-full items-start md:items-stretch sm:flex-row hidden md:flex ">
+        <div className="hidden w-full flex-col gap-4 sm:flex-row md:flex md:items-stretch md:justify-between 2xl:gap-24">
           <Input
             className=""
             key={contact.formElements[4].name}
@@ -70,7 +69,7 @@ const ContactForm = () => {
             type={contact.formElements[6].type}
           />
         </div>
-        <CustomSelect className="md:hidden"  />
+        <CustomSelect className="md:hidden" />
       </div>
       <div className="w-full">
         <Input
@@ -82,7 +81,7 @@ const ContactForm = () => {
           type={contact.formElements[7].type}
         />
       </div>
-      <div className="flex lg:gap-24 gap-5 lg:justify-between justify-start items-start  flex-col lg:flex-row w-full">
+      <div className="flex w-full flex-col items-start justify-start gap-5 lg:flex-row lg:justify-between lg:gap-24">
         <Input
           className=""
           key={contact.formElements[8].name}
@@ -91,7 +90,7 @@ const ContactForm = () => {
           name={contact.formElements[8].name}
           type={contact.formElements[8].type}
         />
-        <button className="px-5 py-2 bg-purple-600 rounded-md text-purple-50 w-fit">
+        <button className="w-fit rounded-md bg-purple-600 px-5 py-2 text-purple-50">
           Submit
         </button>
       </div>

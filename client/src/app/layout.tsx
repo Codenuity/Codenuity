@@ -9,10 +9,7 @@ export const metadata: Metadata = {
   title: "Codenuity",
   description:
     "Top Mobile App Development Company. Experts in iOS/Android Apps, Web Design, UX/UI, AI, Machine Learning, Blockchain, Cybersecurity. Trusted Technology Solutions.",
-  twitter:{
-    card:"summary_large_image",
-  },
-}; 
+};
 
 export default function RootLayout({
   children,
@@ -22,9 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <SmoothScroll>
-          {children}
-          </SmoothScroll>
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

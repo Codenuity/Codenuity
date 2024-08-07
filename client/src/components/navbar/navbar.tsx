@@ -1,4 +1,5 @@
 "use client";
+
 import { navItems } from "@/settings/nav-items";
 import { NavItem } from "./nav-item";
 import { useState } from "react";
@@ -46,21 +47,20 @@ const Navbar = ({ className }: NavbarProps): JSX.Element => {
         transition={{
           duration: 0.5,
         }}
-        className="fixed hidden lg:block px-28 top-10 bg-transparent z-50 max-w-full inset-x-0 mx-auto space-x-4"
+        className="fixed inset-x-0 top-6 z-50 mx-auto hidden max-w-full space-x-4 bg-transparent px-14 lg:block xl:px-28 2xl:top-10"
       >
         <div
           className={cn(
-            "w-full h-28  flex items-center justify-between bg-neutral-950 px-5 rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-40",
+            "flex h-28 w-full items-center justify-between rounded-xl bg-neutral-950 bg-opacity-40 px-5 backdrop-blur-lg backdrop-filter",
             className
           )}
         >
-          <div className="text-white text-2xl font-bold">
-            <Link href='/' className="size-fit cursor-pointer" >
+          <div className="text-2xl font-bold text-white">
+            <Link href="/" className="size-fit cursor-pointer">
               <LogoFull />
             </Link>
-           
           </div>
-          <div className="flex items-center space-x-4 2xl:w-7/12 lg:w-9/12 justify-between">
+          <div className="flex items-center justify-between space-x-2 lg:w-8/12 xl:w-7/12 2xl:w-7/12 2xl:space-x-4">
             {navItems.map((item) => (
               <NavItem
                 key={item.label}

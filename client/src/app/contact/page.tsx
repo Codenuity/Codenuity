@@ -10,11 +10,11 @@ import { contact } from "@/settings/contact";
 
 const Contact = () => {
   return (
-    <div className="w-screen max-w-[100vw] h-full overflow-x-hidden">
+    <div className="h-full w-screen max-w-[100vw] overflow-x-hidden">
       <Navbar />
       <MobileNavbar />
-      <div className="min-h-[150vh] h-fit w-full 2xl:px-52 xl:px-40 px-10 md:px-20 bg-black text-neutral-50 flex flex-col">
-        <Background ClassName="min-h-screen lg:h-screen h-fit max-w-[100vw] px-0 md:px-0 flex flex-col justify-center gap-24 relative ">
+      <div className="flex h-fit min-h-dvh w-full flex-col bg-black px-10 text-neutral-50 xl:px-20 2xl:px-52">
+        <Background ClassName="min-h-fit h-fit max-w-[100vw] flex flex-col justify-center gap-24 relative sm:px-0 md:px-4 xl:px-20">
           <ContactHero />
           <BlurCircle
             options={{ x: [0, -1000, 0], y: [0, 300, 0] }}
@@ -26,9 +26,9 @@ const Contact = () => {
           />
           <BlurCircle
             options={{ x: [0, 0, 0], y: [0, -300, 0] }}
-            className="left-64 bottom-52 blur-[100px]"
+            className="bottom-52 left-64 blur-[100px]"
           />
-          <div className="flex justify-between w-full no-scrollbar overflow-x-auto gap-5 lg:gap-10 z-10">
+          <div className="no-scrollbar z-10 flex h-full w-full flex-col justify-between gap-5 overflow-x-auto lg:flex-row lg:gap-10">
             {contact.card.map((item, index) => (
               <ContactCard key={index + item.title} {...item} />
             ))}

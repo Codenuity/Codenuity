@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { content } from "@/settings/home";
 import { TextGenerateEffect } from "../../ui/text-generate";
@@ -14,12 +14,12 @@ export const Section = (): JSX.Element => {
   return (
     <section
       ref={ref}
-      className={`flex flex-col lg:items-center items-start justify-center h-[50vh] font-extralight lg:w-4/5 w-full mb-40 `}
+      className={`flex min-h-dvh w-full flex-col items-start justify-center font-extralight lg:w-4/5 lg:items-center`}
     >
       {view && (
         <TextGenerateEffect
           words={content?.section}
-          className="z-10 xl:text-6xl md:text-5xl  text-3xl  flex justify-center items-center"
+          className="z-10 flex items-center justify-center text-3xl md:text-5xl"
         />
       )}
     </section>

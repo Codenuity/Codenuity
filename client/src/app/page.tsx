@@ -19,20 +19,20 @@ import dynamic from "next/dynamic";
 
 export default function Home() {
   return (
-    <main className="bg-black text-neutral-50 h-fit overflow-x-hidden ">
+    <main className="h-fit overflow-x-hidden bg-black text-neutral-50">
       <Navbar className="" />
       <MobileNavbar />
       <Background ClassName="">
         <Hero />
       </Background>
-      <div className="flex flex-col justify-center px-10 md:px-20 items-center 2xl:px-52 xl:px-40">
+      <div className="flex flex-col items-center justify-center px-10 md:px-20 xl:px-40 2xl:px-52">
         <Section />
         <ServiceSection />
         {/* <ClientSection className="" /> */}
       </div>
       <CaseStudySection />
       {/* <TestimonialSection /> */}
-      <div className="2xl:px-52 xl:px-40 px-10 md:px-20 w-full">
+      <div className="w-full px-10 md:px-20 xl:px-40 2xl:px-52">
         <Section2 />
         <DesignDeliver />
       </div>

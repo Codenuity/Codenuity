@@ -1,9 +1,7 @@
 import { content } from "@/settings/home";
 import { cn } from "@/utils/cn";
-import React from "react";
-import { ChatBubble } from "./chatbubble";
+// import { ChatBubble } from "./chatbubble";
 import AiButton from "./AiButton";
-
 
 type AiSectionCardProps = {
   className: string;
@@ -12,76 +10,76 @@ type AiSectionCardProps = {
 export const AiSectionCard = ({
   className,
 }: AiSectionCardProps): JSX.Element => {
-  const [messages, setMessages] = React.useState<
-    { id: string; content: string | (() => void); sender: string }[]
-  >([]);
+  // const [messages, setMessages] = useState<
+  //   { id: string; content: string | (() => void); sender: string }[]
+  // >([]);
 
-  const [sendMessage, setSendMessage] = React.useState<string>("");
-  const [update, setUpdate] = React.useState<boolean>(false);
+  // const [sendMessage, setSendMessage] = useState<string>("");
+  // const [update, setUpdate] = useState<boolean>(false);
   // const socket = React.useMemo(() => new WebSocket("ws://localhost:5000"), []);
 
-  React.useEffect(() => {
-    // socket.onmessage = (event) => {
-    //   const newMessage = {
-    //     id: `sdn`,
-    //     content: event.data,
-    //     sender: "bot",
-    //   };
-    //   setMessages((prevMessages) => [...prevMessages, newMessage]);
-    // };
-  }, []);
+  // React.useEffect(() => {
+  //   socket.onmessage = (event) => {
+  //     const newMessage = {
+  //       id: `sdn`,
+  //       content: event.data,
+  //       sender: "bot",
+  //     };
+  //     setMessages((prevMessages) => [...prevMessages, newMessage]);
+  //   };
+  // }, []);
 
-  const sendMessageToBot = () => {
-    if (sendMessage === "") return;
+  // const sendMessageToBot = () => {
+  //   if (sendMessage === "") return;
 
-    const newMessage = {
-      id: `sdn`,
-      content: sendMessage,
-      sender: "user",
-    };
-    setMessages((prevMessages) => [...prevMessages, newMessage]);
-    // socket.send(sendMessage);
-    setSendMessage("");
-    setUpdate((prevUpdate) => !prevUpdate);
-  };
+  //   const newMessage = {
+  //     id: `sdn`,
+  //     content: sendMessage,
+  //     sender: "user",
+  //   };
+  //   setMessages((prevMessages) => [...prevMessages, newMessage]);
+  //   // socket.send(sendMessage);
+  //   setSendMessage("");
+  //   setUpdate((prevUpdate) => !prevUpdate);
+  // };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSendMessage(e.target.value);
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   setSendMessage(e.target.value);
+  // };
 
   return (
     <div
       className={cn(
-        "w-full bg-neutral-600  backdrop-filter backdrop-blur-lg lg:h-full h-96 bg-opacity-20 p-5 border border-neutral-900 rounded-2xl gap-5 flex flex-col justify-between items-center",
+        "flex h-96 w-full flex-col items-center justify-between gap-5 rounded-2xl border border-neutral-900 bg-neutral-600 bg-opacity-20 p-5 backdrop-blur-lg backdrop-filter lg:h-full",
         className
       )}
     >
-      <div className="w-full h-2/4 overflow-y-auto relative flex text-sm md:text-base flex-col gap-5 justify-center items-center custom-scrollbar px-5">
-        {messages.length > 0 ? (
+      <div className="custom-scrollbar relative flex h-2/4 w-full flex-col items-center justify-center gap-5 overflow-y-auto px-5 text-sm md:text-base">
+        {/* {messages.length > 0 ? (
           messages.map((msg, index) => (
             <ChatBubble key={index} message={msg} sender={msg?.sender} />
           ))
-        ) : (
-          <h1>How Can I help you today?</h1>
-        )}
+        ) : ( */}
+        <h1>How Can I help you today?</h1>
+        {/* )} */}
       </div>
-      <div className="w-full flex text-neutral-100 font-light bg-neutral-800 backdrop-filter backdrop-blur-lg h-16 rounded-xl px-5 pr-3 py-2 justify-center items-center">
+      <div className="flex h-16 w-full items-center justify-center rounded-xl bg-neutral-800 px-5 py-2 pr-3 font-light text-neutral-100 backdrop-blur-lg backdrop-filter">
         <input
           type="text"
-          className="w-full bg-transparent h-full tracking-wide focus:outline-none focus:border-none placeholder:text-transparent md:placeholder:text-gray-400"
+          className="h-full w-full bg-transparent tracking-wide placeholder:text-transparent focus:border-none focus:outline-none md:placeholder:text-gray-400"
           placeholder="How will AI shapes future?"
-          value={sendMessage}
-          onChange={handleChange}
+          // value={sendMessage}
+          // onChange={handleChange}
           disabled
         />
         <AiButton />
       </div>
-      <div className="flex flex-col gap-2 w-full h-2/4 md:mt-5 ">
+      <div className="flex w-full flex-col gap-2 md:mt-5">
         <h3 className="text-lg font-medium leading-snug">
           {content.services.ai.title}
         </h3>
-        <p className="text-sm text-neutral-500 leading-relaxed">
-          <span>{content.services.ai.description}</span>
+        <p className="text-xs leading-relaxed text-neutral-500 md:text-sm xl:w-4/6">
+          {content.services.ai.description}
         </p>
       </div>
     </div>

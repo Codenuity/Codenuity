@@ -3,19 +3,22 @@ import React from "react";
 
 const Address = () => {
   return (
-    <div className="flex flex-col lg:gap-5 gap-2">
-      <h1 className="lg:text-3xl text-xl bg-clip-text bg-gradient-to-b from-neutral-500  to-neutral-400  text-transparent font-normal  ">
+    <div className="flex flex-col gap-2 lg:gap-5">
+      <h1 className="bg-gradient-to-b from-neutral-500 to-neutral-400 bg-clip-text text-xl font-normal text-transparent lg:text-3xl">
         Codenuity Solutions Pvt Ltd
       </h1>
-      <address className="flex flex-col lg:gap-5 gap-2 not-italic">
-        <p className="bg-clip-text bg-gradient-to-b from-neutral-500  to-neutral-400  text-transparent text-sm lg:text-base">
-          Contact Number : +91 70122 83991
-        </p>
+      <address className="flex flex-col gap-2 not-italic lg:gap-5">
+        <Link
+          href="tel:+91 90482 79650"
+          className="bg-gradient-to-b from-neutral-500 to-neutral-400 bg-clip-text text-sm text-transparent lg:text-base"
+        >
+          Contact Number : +91 90482 79650
+        </Link>
         <Link
           href="mailto:info@codenuity.com"
-          className="bg-clip-text bg-gradient-to-b from-neutral-500  to-neutral-400  text-transparent text-sm lg:text-base"
+          className="bg-gradient-to-b from-neutral-500 to-neutral-400 bg-clip-text text-sm text-transparent lg:text-base"
         >
-          Email : info@codenuity.com
+          Email : admin@codenuity.com
         </Link>
       </address>
     </div>

@@ -28,11 +28,11 @@ const Contact = () => {
             options={{ x: [0, 0, 0], y: [0, -300, 0] }}
             className="bottom-52 left-64 blur-[100px]"
           />
-          <div className="no-scrollbar z-10 flex h-full w-full flex-col justify-between gap-5 overflow-x-auto lg:flex-row lg:gap-10">
+          {/* <div className="no-scrollbar z-10 flex h-full w-full flex-col justify-between gap-5 overflow-x-auto lg:flex-row lg:gap-10">
             {contact.card.map((item, index) => (
               <ContactCard key={index + item.title} {...item} />
             ))}
-          </div>
+          </div> */}
         </Background>
         <ContactSection />
       </div>

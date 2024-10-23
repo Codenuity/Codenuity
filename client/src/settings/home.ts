@@ -16,7 +16,7 @@ export const content = {
     web: {
       title: `App & Web Development`,
       description: `Harness the power of Cobalt's predictive analytics to map out the financial future of your business. `,
-      image:'/images/web.png'
+      image:'/images/vr.jpg'
     },
     cyber: {
       title: `Cyber Security`,

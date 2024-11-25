@@ -1,20 +1,20 @@
 "use client";
-import { ReactLenis } from "@studio-freight/react-lenis";
+
+import { ReactLenis } from "lenis/react";
 
 type SmoothScrollProps = {
-    children: React.ReactNode;
-}
+  children: React.ReactNode;
+};
 
-function SmoothScroll({children}: SmoothScrollProps) {
-
-    const options = {
-        lerp: 0.1,
-        smooth: true,
-        smoothMobile: true,
-        offset: 0,
-        speed: 1000,
-        updateURL: true,
-    };
+function SmoothScroll({ children }: SmoothScrollProps) {
+  const options = {
+    lerp: 0.1,
+    smooth: true,
+    smoothMobile: true,
+    offset: 0,
+    speed: 1000,
+    updateURL: true,
+  };
 
   return <ReactLenis root>{children}</ReactLenis>;
 }

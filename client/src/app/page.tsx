@@ -11,9 +11,7 @@ import { DesignDeliver } from "@/components/home/design-deliver/DesignDeliver";
 import Footer from "@/components/footer/Footer";
 import MobileNavbar from "@/components/navbar/MobileNavbar";
 
-const Particles = dynamic(() => import("@/components/ui/ParticlesBackground"), {
-  ssr: false,
-});
+const Particles = dynamic(() => import("@/components/ui/ParticlesBackground"));
 
 import dynamic from "next/dynamic";
 

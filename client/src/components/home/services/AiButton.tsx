@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { BsStars } from "react-icons/bs";
 
 const AiButton = () => {
@@ -16,7 +16,7 @@ const AiButton = () => {
       }}
       transition={{ duration: 0.3 }}
       onClick={sendMessageToBot}
-      className="bg-neutral-900 px-6 py-3 h-fit w-fit text-neutral-500 hover:text-neutral-50 rounded-lg items-center flex gap-2 "
+      className="flex h-fit w-fit items-center gap-2 rounded-lg bg-neutral-900 px-6 py-3 text-neutral-500 hover:text-neutral-50"
     >
       <BsStars /> <span className="hidden md:block">Generate</span>
     </motion.button>

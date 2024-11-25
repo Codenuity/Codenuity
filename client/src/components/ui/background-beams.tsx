@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { cn } from "@/utils/cn";
 
 export const BackgroundBeams = React.memo(
@@ -31,12 +31,12 @@ export const BackgroundBeams = React.memo(
     return (
       <div
         className={cn(
-          "absolute  h-full w-full inset-0 [mask-size:40px] [mask-repeat:no-repeat] flex items-center justify-center",
+          "absolute inset-0 flex h-full w-full items-center justify-center [mask-repeat:no-repeat] [mask-size:40px]",
           className
         )}
       >
         <svg
-          className=" z-0 h-full w-full pointer-events-none absolute "
+          className="pointer-events-none absolute z-0 h-full w-full"
           width="100%"
           height="100%"
           viewBox="0 0 696 316"
@@ -79,7 +79,7 @@ export const BackgroundBeams = React.memo(
                   ease: "easeInOut",
                   repeat: Infinity,
                   delay: index === 1 ? 0 : Math.random() * 10 + index,
-                  repeatDelay: Math.random() * 15
+                  repeatDelay: Math.random() * 15,
                 }}
               >
                 <stop stopColor="#18CCFC" stopOpacity="0"></stop>

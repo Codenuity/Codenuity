@@ -5,7 +5,7 @@ import { SectionCard } from "./card";
 import { AiSectionCard } from "./ai";
 import { OthersServicesCard } from "./other-service";
 import { content } from "@/settings/home";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView } from "motion/react";
 
 export const ServiceSection = () => {
   return (

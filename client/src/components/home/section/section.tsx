@@ -2,7 +2,7 @@
 
 import { content } from "@/settings/home";
 import { TextGenerateEffect } from "../../ui/text-generate";
-import { useInView } from "framer-motion";
+import { useInView } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 
 export const Section = (): JSX.Element => {

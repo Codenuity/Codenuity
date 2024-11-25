@@ -1,7 +1,7 @@
 "use client";
 
 import { content } from "@/settings/home";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 

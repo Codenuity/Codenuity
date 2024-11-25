@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rimraf \"{.next,dist,build,out,node_modules}\"",
+    "check-format": "prettier --check .",
+    "check-types": "tsc --pretty --noEmit",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@lottiefiles/react-lottie-player": "^3.5.4",

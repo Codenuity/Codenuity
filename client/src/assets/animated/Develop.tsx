@@ -1,6 +1,6 @@
 import React from "react";
 
-function DevelopIcon() {
+function DevelopIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -8,6 +8,7 @@ function DevelopIcon() {
       height="211"
       fill="none"
       viewBox="0 0 211 211"
+      {...props}
     >
       <path
         fill="url(#paint0_linear_535_1267)"

@@ -1,21 +1,31 @@
 {
-  "name": "bot",
+  "name": "codenuity-bot-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Codenuity Solutions - AI Chatbot Server with NLP",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "chatbot",
+    "nlp",
+    "websocket",
+    "express"
+  ],
+  "author": "Codenuity Solutions",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
     "express": "^4.18.3",
     "node-nlp": "^4.27.0",
-    "nodemon": "^3.1.0",
     "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

@@ -9,9 +9,12 @@ type InputProp = {
   title?: string;
   name?: string;
   type?: string;
+  value?: string;
+  onChange?: (e: any) => void;
+  required?: boolean;
 };
 
-const Input = ({ className, placeholder, title, name, type }: InputProp) => {
+const Input = ({ className, placeholder, title, name, type, value, onChange, required }: InputProp) => {
   const [code, setCode] = useState("+91");
   const [number, setNumber] = useState(code);
 
@@ -60,6 +63,9 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
               id={name}
               name={name}
               placeholder={placeholder}
+              value={value}
+              onChange={onChange}
+              required={required}
             />
           </div>
         </div>
@@ -108,6 +114,9 @@ const Input = ({ className, placeholder, title, name, type }: InputProp) => {
               minLength={5}
               name={name}
               placeholder={placeholder}
+              value={value}
+              onChange={onChange}
+              required={required}
               className="w-full rounded-md border border-neutral-800 bg-neutral-800 px-5 py-2 text-neutral-200 caret-neutral-50 focus:border-neutral-700 focus:outline-none"
               id={name}
             ></textarea>

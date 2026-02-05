@@ -15,12 +15,12 @@ export function Background({
   return (
     <div
       className={cn(
-        "flex h-fit w-full flex-col items-center justify-center bg-black px-10 pt-20 antialiased md:px-20 md:pt-32 lg:pt-72 xl:px-32 xl:pt-44 2xl:pt-20",
+        "relative flex h-screen w-full flex-col items-center justify-center bg-black px-10 pt-20 antialiased md:px-20 md:pt-32 lg:pt-72 xl:px-32 xl:pt-44 2xl:pt-20 overflow-hidden",
         ClassName
       )}
     >
-      {children}
       <BackgroundBeams />
+      {children}
     </div>
   );
 }

@@ -14,12 +14,18 @@ type CustomSelectProps = {
   options?: string[];
   value?: string;
   onChange?: (value: string) => void;
+  onValueChange?: (value: string) => void;
   placeholder?: string;
 };
 
-const CustomSelect = ({ className }: CustomSelectProps) => {
+const CustomSelect = ({ className, value, onChange, onValueChange }: CustomSelectProps) => {
+  const handleValueChange = (newValue: string) => {
+    if (onValueChange) onValueChange(newValue);
+    if (onChange) onChange(newValue);
+  };
+
   return (
-    <Select>
+    <Select value={value} onValueChange={handleValueChange}>
       <SelectTrigger
         className={cn(
           "w-full bg-neutral-800 text-base border-none outline-none focus:ring-0 ring-0 focus:outline-none h-12",

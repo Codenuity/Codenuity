@@ -15,34 +15,52 @@ const ParticlesBackground = () => {
     });
   }, []);
 
-
   return (
-    <>
+    <div className="fixed inset-0 w-screen h-screen pointer-events-none overflow-hidden" style={{ zIndex: -1 }}>
       {init && (
         <Particles
           id="tsparticles"
           style={{
-            backgroundColor:"black",
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
           }}
           options={{
+            fullScreen: {
+              enable: false,
+            },
+            background: {
+              color: {
+                value: "transparent",
+              },
+            },
+            fpsLimit: 120,
             particles: {
               number: {
-                value: 160,
+                value: 150,
                 density: {
                   enable: true,
+                  area: 800,
                 },
               },
               color: {
                 value: "#ffffff",
               },
               shape: {
-                type: "star",
+                type: "circle",
               },
               opacity: {
-                value: 1,
+                value: 0.8,
+                random: true,
               },
               size: {
-                value: 0.4,
+                value: 2,
+                random: {
+                  enable: true,
+                  minimumValue: 1,
+                },
               },
               line_linked: {
                 enable: false,
@@ -58,7 +76,7 @@ const ParticlesBackground = () => {
                 random: true,
                 straight: false,
                 attract: {
-                  enable: true,
+                  enable: false,
                 },
               },
             },
@@ -94,7 +112,7 @@ const ParticlesBackground = () => {
           }}
         />
       )}
-    </>
+    </div>
   );
 };
 

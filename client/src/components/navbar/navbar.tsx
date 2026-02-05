@@ -47,20 +47,20 @@ const Navbar = ({ className }: NavbarProps): JSX.Element => {
         transition={{
           duration: 0.5,
         }}
-        className="fixed inset-x-0 top-6 z-50 mx-auto hidden max-w-full space-x-4 bg-transparent px-14 lg:block xl:px-28 2xl:top-10"
+        className="fixed inset-x-0 top-6 z-50 flex justify-center bg-transparent px-14 lg:block xl:px-28 2xl:top-10"
       >
         <div
           className={cn(
-            "flex h-28 w-full items-center justify-between rounded-xl bg-neutral-950 bg-opacity-40 px-5 backdrop-blur-lg backdrop-filter",
+            "flex h-28 w-full max-w-7xl items-center justify-between rounded-xl bg-neutral-950 bg-opacity-40 px-5 backdrop-blur-lg backdrop-filter",
             className
           )}
         >
-          <div className="text-2xl font-bold text-white">
-            <Link href="/" className="size-fit cursor-pointer">
+          <div className="flex-shrink-0">
+            <Link href="/" className="inline-flex cursor-pointer">
               <LogoFull />
             </Link>
           </div>
-          <div className="flex items-center justify-between space-x-2 lg:w-8/12 xl:w-7/12 2xl:w-7/12 2xl:space-x-4">
+          <nav className="flex items-center justify-end gap-2 lg:gap-4">
             {navItems.map((item) => (
               <NavItem
                 key={item.label}
@@ -70,7 +70,7 @@ const Navbar = ({ className }: NavbarProps): JSX.Element => {
                 label={item.label}
               />
             ))}
-          </div>
+          </nav>
         </div>
       </motion.div>
     </AnimatePresence>

@@ -1,17 +1,26 @@
 {
-  "name": "website",
+  "name": "codenuity-solutions",
   "version": "1.0.0",
-  "description": "",
+  "description": "Codenuity Solutions - Top Technology Development Company",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run dev --workspace=client & npm run start --workspace=server/bot",
+    "build": "npm run build --workspace=client",
+    "start": "npm run start --workspace=client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "workspaces": [
+    "client",
+    "server/bot"
+  ],
+  "keywords": [
+    "mobile-app-development",
+    "web-development",
+    "ai-ml",
+    "blockchain",
+    "cybersecurity"
+  ],
+  "author": "Codenuity Solutions",
   "license": "ISC",
-  "dependencies": {
-    "@nlpjs/basic": "^4.27.0",
-    "cors": "^2.8.5",
-    "react-text-transition": "^3.1.0"
-  }
+  "devDependencies": {}
 }

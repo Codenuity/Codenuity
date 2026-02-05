@@ -49,14 +49,9 @@ const ParticlesBackground = () => {
               },
               opacity: {
                 value: 0.8,
-                random: true,
               },
               size: {
                 value: 2,
-                random: {
-                  enable: true,
-                  minimumValue: 1,
-                },
               },
               line_linked: {
                 enable: false,

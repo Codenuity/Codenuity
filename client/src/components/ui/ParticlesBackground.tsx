@@ -40,10 +40,6 @@ const ParticlesBackground = () => {
             particles: {
               number: {
                 value: 150,
-                density: {
-                  enable: true,
-                  area: 800,
-                },
               },
               color: {
                 value: "#ffffff",
